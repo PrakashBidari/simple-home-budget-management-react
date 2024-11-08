@@ -1,13 +1,176 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 70%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+h2{
+  padding: 40px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+h4{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+body {
+  color: #495057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+small{
+  font-size: .9rem;
+}
+
+p{
+  font-size: 1.1rem;
+}
+
+.container {
+  min-height: 66vh;
+  margin-bottom: 100px;
+  
+  display: grid;
+  grid-template-columns: 34rem 44rem;
+  column-gap: 4rem;
+  align-items: start;
+}
+
+.expance-list{
+  padding: 34px;
+  background-color: #dcfcec;
+  border-radius: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.card-image{
+  clip-path: circle();
+}
+
+.card{
+  background-color: #cffae5;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .25s ease-in-out;
+}
+
+.card:hover{
+  background-color: #b0fad6;
+}
+
+.expanse-table{
+  padding: 34px;
+  border-radius: 12px;
+  background-color: #dcfcec;
+}
+
+table{
+  width: 100%;
+  
+}
+
+table, th, td {
+  background-color: #cffae5;
+  border: 1px solid  #26fc94;;
+}
+
+td{
+  font-size:small;
+}
+
+tr:hover{
+  background-color: #b0fad6;
+}
+
+.table-image{
+  display: grid;
+  place-content: center;
+  max-height: 34px;
+}
+
+.sub-total{
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  font-size: small;
+}
+
+.sub-total-table{
+  max-width: 200px;
+}
+
+.expanse-form{
+  margin-top: 10px;
+  padding: 34px;
+  border-radius: 12px;
+  background-color: #dcfcec;
+}
+
+
+
+form .form-add-expence {
+  font-size: 1.6rem;
+  display: grid;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.form-add-expence{
+  grid-template-columns: 1fr 1.5fr;
+}
+
+input{
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  text-align: center;
+  border: 1px solid #b0fad6;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+label {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+.add-button{
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #2afc96;
+  color: rgb(94, 99, 146);
+  border: none;
+  font-weight: bolder;
+  margin-top: 15px;
+  align-self: flex-end;
+
+
+ 
+}
+
+.btn-container{
+  text-align: end;
+}
+
+
+
