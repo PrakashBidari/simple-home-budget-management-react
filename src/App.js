@@ -79,7 +79,7 @@ function ExpanceTable({ expances }) {
   return (
     <div className="expanse-table">
       <h4>
-        {remainingBudget > 0
+        {remainingBudget >= 0
           ? `The available budget right now is Rs ${remainingBudget}`
           : `You have exceade your budget by ${remainingBudget}`}
       </h4>
